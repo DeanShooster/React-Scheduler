@@ -1,0 +1,17 @@
+@font-face{
+    font-family: IBM Plex Mono;
+    src: url('../../public/IBMPlexMono-Light.ttf') format('trueType');
+}
+
+$header-fixup: 2.5rem;
+
+// Fonts
+$main-font: 'IBM Plex Mono';
+
+// Themes
+$text-color: #ABA499;
+
+
+// Media
+$ipad: 1250px;
+$mobile: 600px;

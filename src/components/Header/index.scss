@@ -1,0 +1,15 @@
+@import '../../styles/global.scss';
+
+header{
+    position: fixed; top: 0; left: 0; z-index: 9999;
+    width: 100%; height: fit-content; padding: 1.25rem 0; 
+    background-color: #000000;
+
+    & > div{
+        width: 70%; margin: 0 auto;
+        display: flex; align-items: center; justify-content: space-between;
+
+        @media(max-width: $ipad){ width: 90%;}
+        @media(max-width: $mobile) {width: 95%;}
+    }
+}

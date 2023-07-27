@@ -1,0 +1,12 @@
+@import '../../../styles/global.scss';
+
+.scheduler-bg-video-wrapper{
+    position: absolute; left: 0; top: calc($header-fixup + 4.25rem); z-index: -1;
+    width: 100%;
+
+    @media(max-width: $ipad){ top: calc($header-fixup + 3rem) }
+
+    & > video{
+        width: 100%; min-width: 1500px;
+    }
+}

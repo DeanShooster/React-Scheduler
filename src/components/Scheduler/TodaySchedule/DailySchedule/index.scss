@@ -1,0 +1,56 @@
+@import '../../../../styles/global.scss';
+
+$text-color: rgb(232, 230, 227);
+$active-color: hsl(186 100% 29%);
+
+.daily-schedule-wrapper{
+    width: 40%;
+    display: flex; flex-flow: column; justify-content: center;
+
+    @media(max-width: $ipad){ width: 500px;}
+    @media(max-width: $mobile){ width: 95%;}
+
+    h1{
+        margin: 0 0 16px 0;
+        text-transform: uppercase; letter-spacing: 2px; font-size: 3rem; white-space: nowrap; text-align: center;
+        color: $text-color;
+
+        @media(max-width: $ipad){ font-size: 2rem;}
+        @media(max-width: $mobile){ font-size: 1.5rem;}
+    }
+
+    .schedule{
+        width: 100%;
+        display: flex;
+
+        ul{
+            width: 50%; padding: 0; margin: 0; padding: 0 5px;
+            list-style: none;
+            display: flex; flex-flow: column; row-gap: 16px;
+            background-color: black;
+
+            & > li::marker{ color: $text-color;}
+
+            li{
+                padding: 24px 0;
+                text-align: center; font-size: 32px; font-weight: bold;
+                border: 1px solid $text-color;
+
+                @media(max-width: $ipad){ font-size: 24px;}
+                @media(max-width: $mobile){ font-size: 16px;}
+            }
+
+            .active-work-food{
+                animation: active-glow ease-in-out infinite 2.5s;
+            }
+        }
+    }
+}
+
+@keyframes active-glow{
+    0%{ color: $text-color; border: 1px solid $text-color; }
+    20%{ color: black;}
+    50%{ background-color: $text-color; color: black; }
+    70%{ color: black;}
+    100%{ color: $text-color; border: 1px solid $text-color; }
+}

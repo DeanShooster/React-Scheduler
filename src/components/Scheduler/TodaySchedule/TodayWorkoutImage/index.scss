@@ -1,0 +1,40 @@
+@import '../../../../styles/global.scss';
+
+$bigMove: -30px; $mobileBigMove: -20px;
+$smallMove: -15px; $mobileSmallMove: -10px;
+
+.today-workout-img-wrapper{
+    width: 60%;
+    position: relative;
+    border: 1px solid $text-color;
+
+    @media(max-width: $ipad){ width: 500px; height: 300px;}
+    @media(max-width: $mobile) { width: 95%; height: auto;}
+
+    img{
+        width: 100%; min-height: 450px;
+
+        @media(max-width: $ipad){ min-height: 100%}
+    }
+
+    &::before{
+        content: "";
+        position: absolute; left: $bigMove; right: $bigMove; top: $smallMove; bottom: $smallMove;
+        opacity: .7;
+        border: solid 2px $text-color;
+
+        @media(max-width: $mobile){
+            position: absolute; left: $mobileBigMove; right: $mobileBigMove; top: $mobileSmallMove; bottom: $mobileSmallMove;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute; left: $smallMove; right: $smallMove; top: $bigMove; bottom: $bigMove;
+        opacity: .3;
+        border: solid 2px $text-color;
+
+        @media(max-width: $mobile){
+            position: absolute; left: $mobileSmallMove; right: $mobileSmallMove; top: $mobileBigMove; bottom: $mobileBigMove;
+        }
+    }
+}

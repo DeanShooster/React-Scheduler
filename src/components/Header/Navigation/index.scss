@@ -1,0 +1,35 @@
+@import '../../../styles/global.scss';
+
+.navigation{
+    position: relative;
+    display: flex; gap: 32px;
+
+    @media(max-width: $mobile) {gap: 16px}
+
+    & > div{
+        text-transform: uppercase; font-weight: bold; letter-spacing: 2px; font-size: 1.5rem;
+
+        @media(max-width: $ipad) { font-size: 1.25rem;}
+        @media(max-width: $mobile) {font-size: .9rem;}
+
+        &:hover{
+            cursor: pointer;
+            color: rgb(232, 230, 227);
+            transition: .25s;
+        }
+    }
+
+    & > div:nth-child(1)::after , div:nth-child(2)::after{
+        position: absolute; top: 50%;
+        content: "";
+        width: 24px;
+        border: 1px solid #AD9B91;
+
+        @media(max-width: $mobile){width: 10px;}
+    }
+
+    .selected-nav{
+        color: rgb(232, 230, 227);
+        &:hover{ cursor: auto;}
+    }
+}
