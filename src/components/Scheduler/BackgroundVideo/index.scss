@@ -6,7 +6,5 @@
 
     @media(max-width: $ipad){ top: calc($header-fixup + 3rem) }
 
-    & > video{
-        width: 100%; min-width: 1500px;
-    }
+    & > video{ width: 100%; min-width: 1500px; }
 }

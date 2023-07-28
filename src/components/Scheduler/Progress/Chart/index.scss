@@ -1,5 +1,11 @@
-
+@import '../../../../styles/global.scss';
 
 .chart-container{
-    
+    margin: 32px auto 0 auto;
+    width: 85%;
+
+    background-color: $main-bg; border-radius: 15px; outline: 2px solid $text-color;
+
+    @media(max-width: $ipad){ width: 95%;}
+    @media(max-width: $mobile){ margin: 16px auto 0 auto; }
 }

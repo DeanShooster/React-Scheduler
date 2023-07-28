@@ -27,7 +27,7 @@ $active-color: hsl(186 100% 29%);
             width: 50%; padding: 0; margin: 0; padding: 0 5px;
             list-style: none;
             display: flex; flex-flow: column; row-gap: 16px;
-            background-color: black;
+            background-color: $main-bg;
 
             & > li::marker{ color: $text-color;}
 
@@ -49,8 +49,8 @@ $active-color: hsl(186 100% 29%);
 
 @keyframes active-glow{
     0%{ color: $text-color; border: 1px solid $text-color; }
-    20%{ color: black;}
-    50%{ background-color: $text-color; color: black; }
-    70%{ color: black;}
+    20%{ color: $main-bg;}
+    50%{ background-color: $text-color; color: $main-bg; }
+    70%{ color: $main-bg;}
     100%{ color: $text-color; border: 1px solid $text-color; }
 }

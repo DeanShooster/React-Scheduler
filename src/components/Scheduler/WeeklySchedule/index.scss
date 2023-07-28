@@ -1,0 +1,10 @@
+@import '../../../styles/global.scss';
+
+.weekly-schedule-page{
+    padding-top: calc($header-fixup + 4rem);
+
+    h1{
+        font-size: 2.25rem; text-transform: uppercase; text-align: center; letter-spacing: 2px; text-decoration: underline;
+        @media(max-width: $mobile) { font-size: 1.75rem; }
+    }
+}

@@ -16,8 +16,11 @@ const EnglishDictionary = {
             running: 'Running',
             chill: 'Chill',
         },
+    },
+    ScheduleWeekly: {
+        title: 'Weekly Schedule'
     }
 }
 
-const { HeaderDictionary, TodaySchedule } = EnglishDictionary;
-export { HeaderDictionary , TodaySchedule };
+const { HeaderDictionary, TodaySchedule , ScheduleWeekly } = EnglishDictionary;
+export { HeaderDictionary , TodaySchedule, ScheduleWeekly };
