@@ -1,0 +1,7 @@
+@import '../../../styles/global.scss';
+
+.progress-page{
+    padding-top: calc($header-fixup + 6rem);
+
+    @media(max-width: $ipad) { padding-top: calc($header-fixup + 3.25rem);}
+}
