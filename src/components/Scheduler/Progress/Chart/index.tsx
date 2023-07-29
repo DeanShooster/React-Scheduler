@@ -18,6 +18,7 @@ export const Chart = ({chart} : IChart) => {
     const graphWidthDesktopSize = 0.85, graphWidthIpadSize = 0.95;
     const graphStrokeWidth = 2.75, graphDotRadius = 5, graphActiveDotRadius = 10, xAxisTickMargin = 15, yAxisTickMargin = 5;
     const themeColor = '#ABA499', graphStrokeColor = 'white';
+    const graphTooltipContent = 'black', graphTooltipFontSize = '1rem', graphTooltipFontWeight = 'bold';
 
     const chartName = chart.name.toLowerCase();
     const yUnit = chartName === 'running stamina' ? 'M' : (chartName === 'pullups' || chartName === 'dips' ? undefined : 'KG');
@@ -30,7 +31,7 @@ export const Chart = ({chart} : IChart) => {
                 <YAxis dataKey='value' stroke={graphStrokeColor} strokeWidth={graphStrokeWidth} tickLine={false} tickMargin={yAxisTickMargin} unit={yUnit}/>
                 <Line type="monotone" dataKey='value' stroke={themeColor} strokeWidth={graphStrokeWidth}
                     dot={{r: graphDotRadius, fill: themeColor}} activeDot={{r: graphActiveDotRadius , stroke: graphStrokeColor }} />
-                <Tooltip />
+                <Tooltip contentStyle={{background: graphTooltipContent, border: `3px solid ${graphStrokeColor}`, fontSize: graphTooltipFontSize,fontWeight: graphTooltipFontWeight}}/>
             </LineChart>
         </div>
     );
