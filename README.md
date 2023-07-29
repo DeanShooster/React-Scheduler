@@ -14,6 +14,7 @@ It is built with React.
 
 - Personal scheduler application for various things with graphical statistical progress.
 - Users could be added with an API.
+- [Cloud View](https://dean-scheduler.com/)
 
 <hr>
 <h2 align="center">Build With </h2>
