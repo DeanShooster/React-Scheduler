@@ -40,17 +40,7 @@ $active-color: hsl(186 100% 29%);
                 @media(max-width: $mobile){ font-size: 16px;}
             }
 
-            .active-work-food{
-                animation: active-glow ease-in-out infinite 2.5s;
-            }
+            .active-work-food{ @include active-glowing;}
         }
     }
-}
-
-@keyframes active-glow{
-    0%{ color: $text-color; border: 1px solid $text-color; }
-    20%{ color: $main-bg;}
-    50%{ background-color: $text-color; color: $main-bg; }
-    70%{ color: $main-bg;}
-    100%{ color: $text-color; border: 1px solid $text-color; }
 }

@@ -1,9 +1,15 @@
+import { ScheduleWeekly } from "../dictionary/Dictionary";
+
 // Timers
-export const morningStart = 8;
-export const noonStart = 12;
-export const eveningStart = 18;
-export const nightStart = 23;
+export const morningStart: number = 8;
+export const noonStart: number = 12;
+export const eveningStart: number = 18;
+export const nightStart: number = 23;
 
 // Size
-export const iPad = 1250;
-export const mobile = 600;
+export const iPad: number = 1250;
+export const mobile: number = 600;
+
+// Days
+const {Sunday,Monday,Tuesday,Wednesdays,Thursday,Friday,Saturday} = ScheduleWeekly.days;
+export const days: string[] = [Sunday,Monday,Tuesday,Wednesdays,Thursday,Friday,Saturday];

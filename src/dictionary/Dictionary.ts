@@ -18,7 +18,16 @@ const EnglishDictionary = {
         },
     },
     ScheduleWeekly: {
-        title: 'Weekly Schedule'
+        title: 'Weekly Schedule',
+        days: {
+            Sunday: 'Sunday',
+            Monday: 'Monday',
+            Tuesday: 'Tuesday',
+            Wednesdays: 'Wednesdays',
+            Thursday: 'Thursday',
+            Friday: 'Friday',
+            Saturday: 'Saturday'
+        }
     }
 }
 

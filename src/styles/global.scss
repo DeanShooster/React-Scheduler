@@ -15,3 +15,17 @@ $main-bg: black;
 // Media
 $ipad: 1250px;
 $mobile: 600px;
+
+// Mixin
+@mixin active-glowing{
+    animation: active-glow ease-in-out infinite 2.5s;
+}
+
+// Keyframes
+@keyframes active-glow{
+    0%{ color: $text-color; border: 1px solid $text-color; }
+    20%{ color: $main-bg;}
+    50%{ background-color: $text-color; color: $main-bg; }
+    70%{ color: $main-bg;}
+    100%{ color: $text-color; border: 1px solid $text-color; }
+}

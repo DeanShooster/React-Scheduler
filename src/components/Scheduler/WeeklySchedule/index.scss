@@ -1,9 +1,12 @@
 @import '../../../styles/global.scss';
 
 .weekly-schedule-page{
-    padding-top: calc($header-fixup + 4rem);
+    padding-top: calc($header-fixup + 8rem);
+
+    @media(max-width: $ipad) { padding-top: calc($header-fixup + 4rem);}
 
     h1{
+        margin: 0;
         font-size: 2.25rem; text-transform: uppercase; text-align: center; letter-spacing: 2px; text-decoration: underline;
         @media(max-width: $mobile) { font-size: 1.75rem; }
     }

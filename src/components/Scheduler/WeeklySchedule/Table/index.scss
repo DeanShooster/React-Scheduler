@@ -1,0 +1,32 @@
+@import '../../../../styles/global.scss';
+
+.table-container{
+    width: 95%; height: fit-content; margin: 0 auto; padding: 16px 0;
+    display: flex; flex-direction: row-reverse; justify-content: space-evenly; flex-wrap: wrap; row-gap: 24px; column-gap: 4px;
+    
+
+    @media(max-width: $ipad) { row-gap: 16px;}
+    @media(max-width: $mobile) { flex-direction: column; }
+
+    .day-wrapper{
+        display: flex; flex-flow: column; row-gap: 32px;
+
+        @media(max-width: $ipad){ row-gap: 16px;}
+
+        & > div:first-child{
+            text-transform: uppercase; font-size: 24px; font-weight: bold; text-decoration: underline; letter-spacing: 2px; text-align: center;
+        }
+
+        .part-of-day{
+            padding: 20px 10px;
+            display: flex; justify-content: center; column-gap: 6px;
+            font-size: 1.5rem; font-weight: bold; white-space: nowrap;
+            background-color: $main-bg;
+            border: 1px solid $text-color;
+
+            @media(max-width: $ipad){ font-size: 1.25rem; column-gap: 3px; }
+        }
+
+        .active-day{ @include active-glowing;}
+    }
+}
