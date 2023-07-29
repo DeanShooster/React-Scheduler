@@ -3,5 +3,5 @@
 .progress-page{
     padding-top: calc($header-fixup + 7.5rem);
 
-    @media(max-width: $ipad) { padding-top: calc($header-fixup + 3.25rem);}
+    @media(max-width: $ipad) { padding-top: calc($header-fixup + 3.5rem);}
 }
