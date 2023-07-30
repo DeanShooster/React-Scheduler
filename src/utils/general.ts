@@ -22,6 +22,7 @@ export function findWorkoutImageAccordingToHour(hour: number, dailyWorkout: IWor
  * @returns Image string.
  */
 function findWorkoutImage(workoutType: string){
+    console.log(workoutType)
     switch(workoutType){
         case TodaySchedule.workout.gym: return Gym;
         case TodaySchedule.workout.bike: return Bike;

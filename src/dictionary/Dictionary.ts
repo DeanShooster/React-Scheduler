@@ -13,7 +13,7 @@ const EnglishDictionary = {
             gym: 'Gym',
             bike: 'Bike',
             workout: 'Workout',
-            running: 'Running',
+            running: 'Run/Walk',
             chill: 'Chill',
         },
     },
